@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>wide3</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <meta property="og:title" content="wide3" />
+  <meta property="og:image" content="assets/mark_no_bg_dark.png" />
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+
+<body id="ixi2">
+  <div id="izaoe" class="gjs-grid-row">
+    <div id="ieaux" class="gjs-grid-column"><img id="i2zib" src="assets/mark_no_bg_dark.png" /></div>
+  </div>
+  <div id="imugz" class="gjs-grid-row">
+    <div id="iv2b7" class="gjs-grid-column">
+      <div id="ig8e9" class="gjs-grid-row">
+        <div id="izoza" class="gjs-grid-column">
+          <table id="iziwy">
+            <tbody id="i196j" *ngFor="let message of messages">
+              <tr id="i5jgl" *ngIf="message.user">
+                <td id="i7tqu"><textarea placeholder="..."
+                    oninput="this.style.height = '';this.style.height = this.scrollHeight + 'px'" id="igm4v"
+                    readonly="true" [value]="message.message"></textarea></td>
+              </tr>
+              <tr id="ipk4o-6" *ngIf="!message.user">
+                <td id="ijiu1-6"><textarea oninput="this.style.height = '';this.style.height = this.scrollHeight + 'px'"
+                    placeholder="..." id="iupig-6" readonly="true" [value]="message.message"></textarea></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="i4a8d" class="gjs-grid-column">
+          <div id="i1egu">Nothing to see here, for now</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="ihbpz" class="gjs-grid-row">
+    <div id="ibny9" class="gjs-grid-column">
+      <div id="ia2s6" class="gjs-grid-row">
+        <div id="i45c2" class="gjs-grid-column"><textarea id="ik1zp" placeholder="Your knowledge here..."
+            (keydown)="onKnowledgeKeydown($event)" [(ngModel)]="knowledge"></textarea></div>
+      </div>
+      <div id="ibe0z" class="gjs-grid-row">
+        <div id="i9qyx" class="gjs-grid-column"><button type="button" id="ioce8">Send</button><button type="button"
+            id="i8vi4">Random</button></div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
